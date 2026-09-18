@@ -17,6 +17,10 @@ A collection of practice projects built while learning frontend development.
   - HTML
   - JavaScript
   - Tailwind CSS
+- Todo List
+  - HTML
+  - CSS
+  - JavaScript
 
 ### Tailwind CSS
 
