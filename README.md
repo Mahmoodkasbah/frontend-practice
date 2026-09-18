@@ -1,6 +1,8 @@
 # Frontend Practice
 
-A collection of practice projects built while learning frontend development.
+A collection of projects and exercises I built while learning and practicing frontend development.
+
+This repository documents my learning journey through HTML, CSS, JavaScript, and Tailwind CSS, with each project focusing on different concepts and techniques.
 
 ## Technologies
 
@@ -11,36 +13,52 @@ A collection of practice projects built while learning frontend development.
 
 ## Projects
 
-### HTML
+### HTML & CSS
 
-- Dashboard
-  - HTML & CSS (Single File)
+- **HTML Formatting & Elements Practice**
+  Practice with HTML elements, text formatting, headings, and basic document structure.
 
-- Gaza Flavors
-  - HTML
-  - CSS
-- HTML Basics & Exercises
-  - `html-formatting-practice.html` (Text formatting, inline/block elements, structural tags)
+- **Responsive Dashboard**
+  A responsive dashboard interface built with HTML and CSS.
+
+- **Gaza Flavors**
+  A responsive restaurant website built with HTML and CSS.
+
+- **Kafeeli**
+  A responsive orphan sponsorship platform interface built with HTML and CSS.
 
 ### JavaScript
 
-- Image Slider
-  - HTML
-  - JavaScript
-  - Tailwind CSS
+- **Quiz Time**
+  A multiple-choice quiz game for practicing JavaScript and DOM manipulation.
 
-- Todo List
-  - HTML
-  - CSS
-  - JavaScript
+- **My Tasks**
+  A Todo List application using JavaScript and `localStorage`.
 
-### Tailwind CSS
+- **Dynamic Product Cards**
+  A project focused on creating and styling elements dynamically using JavaScript.
 
-- Image Slider
-  - HTML
-  - JavaScript
-  - Tailwind CSS
+### JavaScript & Tailwind CSS
 
-## Purpose
+- **Dynamic Image Slider**
+  An interactive image slider built with JavaScript and Tailwind CSS.
 
-This repository contains my practice projects and exercises as I improve my frontend development skills.
+## Learning Goals
+
+Through these projects, I am practicing:
+
+- HTML structure and elements
+- CSS layouts and responsive design
+- Flexbox and CSS Grid
+- JavaScript fundamentals
+- DOM manipulation
+- Event handling
+- JavaScript arrays and functions
+- Browser `localStorage`
+- Tailwind CSS
+- Building responsive and interactive interfaces
+
+## About This Repository
+
+This repository is part of my ongoing frontend learning journey.
+I will continue adding new projects and exercises as I learn new concepts and technologies.
