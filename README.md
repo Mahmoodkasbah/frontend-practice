@@ -14,12 +14,7 @@ A collection of practice projects built while learning frontend development.
 ### HTML
 
 - Dashboard
-  - HTML
-  - CSS
-
-- Dashboard
-  - HTML
-  - CSS
+  - HTML & CSS (Single File)
 
 - Gaza Flavors
   - HTML
