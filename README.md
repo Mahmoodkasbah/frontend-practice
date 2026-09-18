@@ -22,8 +22,8 @@ A collection of practice projects built while learning frontend development.
   - CSS
 
 - Gaza Flavors
-- HTML
-- CSS
+  - HTML
+  - CSS
 
 ### JavaScript
 
