@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f7fb;
+    font-family: Arial, sans-serif;
+}
+
+.quiz-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 35px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  Start Page */
+
+#start-page {
+    text-align: center;
+}
+
+#start-page h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #2563eb;
+}
+
+#start-page p {
+    margin-bottom: 25px;
+    color: #64748b;
+    font-size: 17px;
+}
+
+#start-button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#start-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/*  Quiz Page */
+
+#quiz-page {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+#question {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #1e293b;
+    text-align: center;
+}
+
+/* 
+   Quiz Info 
+*/
+
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    color: #64748b;
+    font-size: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.quiz-info span {
+    font-weight: bold;
+    color: #1e293b;
+}
+
+/* Answers */
+
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+.answer-button {
+    width: 100%;
+    padding: 14px 16px;
+    margin-top: 10px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    color: #334155;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    transition: 0.2s;
+}
+
+.answer-button:hover:not(:disabled) {
+    background-color: #eff6ff;
+    border-color: #2563eb;
+    color: #2563eb;
+    transform: translateY(-2px);
+}
+
+.answer-button.selected {
+    background-color: #dbeafe;
+    border-color: #2563eb;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.answer-button.correct {
+    background-color: #dcfce7;
+    border-color: #22c55e;
+    color: #166534;
+    font-weight: bold;
+}
+
+.answer-button.incorrect {
+    background-color: #fee2e2;
+    border-color: #ef4444;
+    color: #991b1b;
+    font-weight: bold;
+}
+
+.answer-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.85;
+    transform: none;
+}
+
+/* Next Button */
+
+#next-button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+
+#next-button:hover:not(:disabled) {
+    background-color: #1d4ed8;
+    
+}
+
+#next-button:disabled {
+    background-color: #cbd5e1;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* 
+   Finish Screen Message
+ */
+
+.finish-message {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.finish-message h2 {
+    font-size: 28px;
+    color: #2563eb;
+    margin: 0;
+}
+
+.final-score {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    font-size: 18px;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.final-score p {
+    margin: 0;
+}
+
+#restart-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#restart-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
