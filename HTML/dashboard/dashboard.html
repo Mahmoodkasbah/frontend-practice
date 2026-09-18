@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>responsive dashboard using html and css only </title>
+   <style>
+        * {
+            padding: 0;
+            margin: 0;
+            color: #ffffff;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+                height: 100%;
+        }
+
+        .menu {
+            background-color: #123;
+            width: 60px;
+            height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+            transition: width 0.5s;
+
+        }
+
+        .menu:hover {
+            width: 260px;
+          
+        }
+
+        .menu ul {
+            list-style: none;
+            height: 95%;
+            position: relative;
+
+        }
+
+        .menu ul li a {
+
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            transition: 0.5s;
+             cursor: pointer;
+        }
+
+        .menu ul li a:hover {
+            background-color: rgba(156, 164, 172, 0.463);
+        }
+
+        .menu ul li a.active {
+            background-color: rgba(156, 164, 172, 0.463);
+        }
+
+        .menu ul li a i {
+            font-size: 30px;
+
+        }
+
+        .menu ul li a p {
+            font-size: 20px;
+
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .image-box {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .profile .image-box img {
+            width: 100%;
+
+        }
+
+        .profile h2 {
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        .log-out {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .log-out a {
+            background-color: rgba(255, 0, 0, 0.815);
+        }
+
+        .content {
+            width: 100%;
+            margin: 10px;
+
+        }
+
+        .title-info {
+
+            background-color: rgb(0, 128, 255);
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+
+        .data-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .data-info .box {
+            flex-basis: 150px;
+            height: 150px;
+            flex-grow: 1;
+            background-color: #123;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .data-info .box:hover {
+            background-color: rgba(156, 164, 172, 0.463);
+
+        }
+
+        .data-info .box {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .data-info .box .data {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .data-info .box .data span {
+            font-size: 30px;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+            border-spacing: 8px;
+
+        }
+
+        th,
+        td {
+            background-color: #123;
+            ;
+            height: 40px;
+            border-radius: 8px;
+        }
+
+        th {
+            background-color: rgb(27, 77, 127);
+            ;
+
+        }
+
+        td:hover {
+            background-color: rgba(156, 164, 172, 0.463);
+
+        }
+        .price ,.count{
+            padding:6px;
+            border-radius: 6px;
+        }
+    </style>
+    </head>
+
+<body>
+
+    <div class="menu">
+
+        <ul>
+            <li class="profile">
+                <div class="image-box">
+                    <img src="image.jpg" width="50px" title="profile">
+                </div>
+                <h2>Mahmood Kasbah</h2>
+            </li>
+
+
+            <li>
+                <a class="active" href="#">
+                    <i class="fas fa-home"></i>
+                    <p>DashBoard </p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-user-group"></i>
+                    <p>Clients </p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-table"></i>
+                    <p>Products </p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-chart-pie"></i>
+                    <p>Charset </p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-star"></i>
+                    <p>Favorite </p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <p>settings </p>
+                </a>
+            </li>
+
+            <li class="log-out">
+                <a href="#">
+                    <i class="fas fa-sign-out"></i>
+                    <p>Log Out </p>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+        <div class="title-info">
+            <p>dashboard </p>
+            <i class="fas fa-chart-bar">
+
+            </i>
+        </div>
+
+        <div class="data-info">
+
+            <div class="box">
+                <i class="fas fa-user"></i>
+                <div class="data">
+                    <p>user</p>
+                    <span>100</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-pen"></i>
+                <div class="data">
+                    <p>posts</p>
+                    <span>850</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-table"></i>
+                <div class="data">
+                    <p>products</p>
+                    <span>7</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-dollar"></i>
+                <div class="data">
+                    <p>revenue</p>
+                    <span>$120</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-info">
+            <p>products </p>
+            <i class="fas fa-table"> </i>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>product</th>
+                    <th>price</th>
+                    <th>count</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>TV</th>
+                    <td><SPAN class="price">$123</SPAN></td>
+                    <td><SPAN class="count">775</SPAN></td>
+                </tr>
+
+                <tr>
+                    <td>Laptop</th>
+                    <td><SPAN class="price">$866</SPAN></td>
+                    <td><SPAN class="count">111</SPAN></td>
+                </tr>
+
+                <tr>
+                    <td>Camera</th>
+                    <td><SPAN class="price">$650</SPAN></td>
+                    <td><SPAN class="count">277</SPAN></td>
+                </tr>
+
+                <tr>
+                    <td>Smartwatch</th>
+                    <td><SPAN class="price">$260</SPAN></td>
+                    <td><SPAN class="count">100</SPAN></td>
+                </tr>
+
+                <tr>
+                    <td>Jacket</th>
+                    <td><SPAN class="price">$50</SPAN></td>
+                    <td><SPAN class="count">47</SPAN></td>
+                </tr>
+
+                <tr>
+                    <td>Table</th>
+                    <td><SPAN class="price">$103</SPAN></td>
+                    <td><SPAN class="count">77</SPAN></td>
+                </tr>
+
+                <tr>
+                    <td>Bed</th>
+                    <td><SPAN class="price">$173</SPAN></td>
+                    <td><SPAN class="count">70</SPAN></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
