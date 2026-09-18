@@ -11,12 +11,27 @@ A collection of practice projects built while learning frontend development.
 
 ## Projects
 
+### HTML
+
+- Dashboard
+  - HTML
+  - CSS
+
+- Dashboard
+  - HTML
+  - CSS
+
+- Gaza Flavors
+- HTML
+- CSS
+
 ### JavaScript
 
 - Image Slider
   - HTML
   - JavaScript
   - Tailwind CSS
+
 - Todo List
   - HTML
   - CSS
@@ -25,6 +40,9 @@ A collection of practice projects built while learning frontend development.
 ### Tailwind CSS
 
 - Image Slider
+  - HTML
+  - JavaScript
+  - Tailwind CSS
 
 ## Purpose
 
