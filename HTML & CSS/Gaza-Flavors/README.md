@@ -21,14 +21,6 @@ The website presents a restaurant with different sections including a hero secti
 - HTML
 - CSS
 
-## Project Structure
-
-Gaza-Flavors/
-├── index.html
-├── images/
-│ └── ...
-└── README.md
-
 ## What I Practiced
 
 - Building a complete website using HTML and CSS

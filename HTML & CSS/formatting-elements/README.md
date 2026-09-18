@@ -17,14 +17,6 @@ The project demonstrates different HTML tags and how they are used to structure 
 
 - HTML
 
-## Project Structure
-
-```text
-HTML-Formatting/
-├── index.html
-└── README.md
-```
-
 ## What I Practiced
 
 - Using different HTML elements

@@ -20,14 +20,6 @@ The website presents a simple platform for orphan sponsorship, with sections for
 - HTML
 - CSS
 
-## Project Structure
-
-Kafeeli/
-├── index.html
-├── images/
-│ └── ...
-└── README.md
-
 ## What I Practiced
 
 - Building a complete webpage using HTML and CSS

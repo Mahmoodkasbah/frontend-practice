@@ -19,13 +19,6 @@ The dashboard includes a sidebar, statistics cards, a products table, and icons 
 - CSS
 - Font Awesome
 
-## Project Structure
-
-```text
-Dashboard/
-├── index.html
-├── image
-└── README.md
 ## What I Practiced
 
 - CSS Flexbox
@@ -34,4 +27,3 @@ Dashboard/
 - CSS transitions and hover effects
 - Working with tables
 - Using Font Awesome icons
-```
