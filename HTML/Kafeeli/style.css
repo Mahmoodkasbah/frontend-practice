@@ -1,0 +1,893 @@
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  background-color: #f9f9f9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ========== الهيدر ========== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 24px;
+  color: #0d4b8e;
+}
+
+.brand img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.links a {
+  position: relative;
+  color: #424750;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.links a:hover,
+.links a.active {
+  color: #0d4b8e;
+}
+
+.links a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background-color: #0d4b8e;
+}
+
+.donate-btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0d4b8e;
+  color: #fff;
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.donate-btn:hover {
+  background-color: #0a3d73;
+}
+/* ========== القسم الرئيسي ========== */
+.main-section {
+  padding: 60px 0;
+  background: radial-gradient(
+    134.35% 134.35% at -4450% -4450%,
+    rgba(13, 75, 142, 0.05) 0.93%,
+    rgba(13, 75, 142, 0) 0.93%
+  );
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin: 0 auto;
+  padding: 77px 50px 85px;
+  min-height: 460px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border: 1px solid rgba(13, 75, 142, 0.1);
+  border-radius: 9999px;
+  background-color: rgba(13, 75, 142, 0.05);
+  margin-bottom: 24px;
+  align-self: flex-start;
+}
+
+.hero-card img {
+  width: 16px;
+  height: 16px;
+}
+
+.hero-card span {
+  font-weight: 700;
+  font-size: 14px;
+  color: #0d4b8e;
+  white-space: nowrap;
+}
+
+.content h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  color: #0d4b8e;
+  margin-bottom: 23px;
+  text-align: right;
+}
+
+.content h1 .highlight {
+  color: #2dbcc3;
+}
+
+.content p {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.25px;
+  color: #424750;
+  max-width: 553px;
+  margin-bottom: 32px;
+  text-align: right;
+}
+
+.main-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 16px;
+}
+
+.main-buttons .btn-primary {
+  padding: 18px 40px;
+  border-radius: 12px;
+  background-color: #2dbcc3;
+  color: #ffffff;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.main-buttons .btn-primary:hover {
+  background-color: #25a0a7;
+}
+
+.main-buttons .btn-secondary {
+  padding: 16px 40px;
+  border-radius: 12px;
+  border: 2px solid rgba(13, 75, 142, 0.1);
+  background: #ffffff;
+  color: #0d4b8e;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.main-buttons .btn-secondary:hover {
+  background-color: #0d4b8e;
+  color: #ffffff;
+}
+
+.main-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-image img {
+  border-radius: 24px;
+  max-width: 520px;
+  width: 100%;
+  transform: rotate(-2deg);
+
+  object-fit: cover;
+}
+
+/* ========== قسم الإحصائيات ========== */
+.stats-section {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.stats-container {
+  width: 100%;
+  max-width: 1100px;
+  background: #0d4b8e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 24px;
+  box-shadow: 0px 25px 50px -12px rgba(13, 75, 142, 0.3);
+  min-height: 160px;
+}
+
+.stat-divider {
+  width: 1.5px;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  flex: 1;
+  padding: 0 20px;
+}
+
+.stat-item h3 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+}
+
+.stat-item p {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+/* ========== قسم المميزات ========== */
+.features-section {
+  padding: 80px 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.features-header {
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.features-header h2 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  color: #0d4b8e;
+  margin-bottom: 16px;
+}
+
+.features-header p {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #424750;
+  margin: 0;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 360px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.feature-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* ألوان الأيقونات المختلفة */
+.feature-icon-blue {
+  background: linear-gradient(135deg, #e8f0fe 0%, #d0e2f7 100%);
+}
+
+.feature-icon-teal {
+  background: linear-gradient(135deg, #e0f7f8 0%, #c5eff0 100%);
+}
+
+.feature-icon-orange {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+}
+
+.feature-card h3 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #0d4b8e;
+  margin-bottom: 16px;
+}
+
+.feature-card p {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #424750;
+  margin: 0;
+}
+
+/* ========== قسم الأيتام ========== */
+.orphans-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 30px;
+  background: #ffffff;
+}
+
+.orphans-container {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  margin-bottom: 5px;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: right;
+  color: #0d4b8e;
+}
+
+.section-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.section-description {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #424750;
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+
+.orphan-card {
+  flex: 1;
+  min-width: 260px;
+  max-width: 288px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(13, 75, 142, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.orphan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 16px 40px rgba(13, 75, 142, 0.15);
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 256px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.orphan-location {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+  text-align: right;
+  background-color: #ffffff;
+  color: #0d4b8e;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+.view-all-btn {
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0d4b8e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.view-all-btn:hover {
+  color: #083866;
+}
+
+.orphan-info {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.orphan-info h3 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: right;
+  color: #0d4b8e;
+  margin: 0;
+}
+
+.orphan-info p {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.14px;
+  text-align: right;
+  color: #424750;
+  margin: 0;
+}
+
+.sponsor-button {
+  width: 100%;
+  padding: 16px 0;
+  margin-top: auto;
+  border: none;
+  border-radius: 14px;
+  background-color: #0d4b8e;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.sponsor-button:hover {
+  background-color: #083866;
+}
+
+/* ========== قسم رحلة الكفالة ========== */
+.sponsorship-journey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 100px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.journey-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.journey-title {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #0d4b8e;
+  margin-bottom: 64px;
+}
+
+.steps-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.step-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #f0f4f8;
+  color: #0d4b8e;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 12px rgba(13, 75, 142, 0.08);
+}
+
+.step-card.active .step-number {
+  background-color: #2dbcc3;
+  color: #ffffff;
+  box-shadow: 0px 6px 16px rgba(45, 188, 195, 0.3);
+}
+
+.step-card h3 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #0d4b8e;
+  margin-bottom: 12px;
+}
+
+.step-card p {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #424750;
+  margin: 0;
+}
+/* ========== قسم الدعوة للانضمام  ========== */
+
+/* الحاوية الرئيسية */
+.cta-section {
+  min-height: 494px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d4b8e;
+  padding: 80px 40px;
+  box-sizing: border-box;
+}
+
+.cta-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cta-quote-icon {
+  color: #fbbf24;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-quote-icon svg {
+  width: 48px;
+  height: 48px;
+}
+
+.cta-text {
+  font-family: "Cairo", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+  color: #ffffff;
+  margin: 0 0 40px 0;
+  max-width: 900px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 20px 48px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: #f59e0b;
+  color: #ffffff;
+  box-shadow: 0px 25px 50px -12px rgba(217, 164, 65, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #d97706;
+  transform: translateY(-2px);
+  box-shadow: 0px 30px 60px -12px rgba(217, 164, 65, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.33);
+  color: #ffffff;
+  backdrop-filter: blur(12px);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+
+
+
+/* ========== الفوتر  ========== */
+.footer-section {
+  background: #f3f4f5;
+  font-family: inherit;
+  direction: rtl;
+  padding-top: 60px;
+  padding-bottom: 20px;
+ 
+}
+
+/* الحاوية الرئيسية */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-brand {
+  gap: 20px;
+}
+
+.footer-logo img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-desc {
+  font-family: Tajawal;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: right;
+  vertical-align: middle;
+
+  color: #424750;
+  margin: 0;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0D4B8E;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 35px;
+  height: 3px;
+  background-color: #3b82f6; 
+  border-radius: 2px;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-nav-link {
+  color: #424750;
+  text-decoration: none;
+  
+  display: inline-block;
+}
+
+.footer-nav-link:hover {
+  color: #3b82f6;
+}
+
+.footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+ color: #424750;
+}
+
+.footer-contact-icon {
+  flex-shrink: 0;
+  color: #3b82f6; 
+  margin-top: 3px;
+}
+
+.footer-contact-link {
+  color: #424750;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact-link:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+/* --- شريط حقوق الملكية  --- */
+.footer-bottom {
+  margin-top: 50px;
+  border-top: 1px solid #334155; 
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom-content p {
+  font-size: 0.9rem;
+  color:#424750;
+  margin: 0;
+}

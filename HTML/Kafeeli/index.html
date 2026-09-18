@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>كفيلي</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- القائمة العلوية  -->
+    <header class="header">
+      <!-- الشعار واسم الموقع -->
+      <div class="brand">
+        <img src="./images/Logo.png" alt="شعار كفيلي - منصة كفالة الأيتام" />
+        <span class="brand-name">كفيلي</span>
+      </div>
+
+      <!-- قائمة التنقل -->
+      <nav class="links" aria-label="القائمة الرئيسية">
+        <a href="#main-section">الرئيسية</a>
+        <a href="#features-section">من نحن</a>
+        <a href="#orphans">الأيتام</a>
+        <a href="#journey">كيفية العمل</a>
+        <a href="#contact">اتصل بنا</a>
+      </nav>
+
+      <!-- زر التبرع -->
+      <button class="donate-btn" type="button" aria-label="تبرع الآن">
+        تبرع الآن
+      </button>
+    </header>
+
+    <!-- القسم الرئيسي  -->
+    <section class="main-section" id="main-section" aria-label="القسم الرئيسي">
+      <div class="main-container">
+        <!--المحتوى عاليمين الصورة -->
+        <div class="main-content">
+          <div class="hero-card">
+            <img src="./images/Icon.png" alt="" />
+            <span>بوابة العطاء الموثوقة</span>
+          </div>
+
+          <!-- العنوان والوصف -->
+          <div class="content">
+            <h1>معاً لنمنحهم <span class="highlight">الأمان</span> والأمل</h1>
+            <p>
+              انضم إلينا في رحلة صناعة الأثر من خلال كفيلي. يمكنك توفير مستقبل
+              مشرق لليتيم وتأمين احتياجاته الأساسية بكل شفافية وحب.
+            </p>
+          </div>
+
+          <div class="main-buttons">
+            <a href="#" class="btn-primary">ابدأ الكفالة الآن</a>
+            <a href="#" class="btn-secondary">تعرف علينا</a>
+          </div>
+        </div>
+        <!-- صورة الطفل -->
+        <div class="main-image">
+          <img src="./images/orphanChild.png" alt="طفل سعيد يبتسم" />
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="stats-section" aria-label="إحصائيات كفيلي">
+      <div class="stats-container">
+        <!-- إحصائية الأيتام المكفولين -->
+
+        <div class="stat-item">
+          <h3 class="stat-number" data-target="500">+500</h3>
+          <p class="stat-label">يتيم مكفول</p>
+        </div>
+        <!-- فاصل عمودي -->
+        <div class="stat-divider"></div>
+
+        <!-- إحصائيةالتبرعات -->
+        <div class="stat-item">
+          <h3 class="stat-number">+2M</h3>
+          <p class="stat-label">تبرعات (دولار)</p>
+        </div>
+
+        <!-- فاصل عمودي -->
+        <div class="stat-divider"></div>
+
+        <!-- إحصائيةالدول -->
+        <div class="stat-item">
+          <h3 class="stat-number">+10</h3>
+          <p class="stat-label">دول حول العالم</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المميزات-->
+    <section id="features-section" class="features-section">
+      <!-- عنوان القسم -->
+      <div class="features-header">
+        <h2>لماذا تختار منصة كفيلي؟</h2>
+        <p>
+          نحن نؤمن بأن الصدقة أمانة، لذلك صممنا نظامنا ليكون الأكثر شفافية
+          وأماناً في العالم العربي.
+        </p>
+      </div>
+
+      <!-- بطاقات  -->
+      <div class="features-container">
+        <!-- البطاقة الاولى -->
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-orange">
+            <img src="./images/people-icon.png" alt="تواصل إنساني" />
+          </div>
+          <h3>تواصل إنساني</h3>
+          <p>
+            نفتح جسور التواصل المعنوي بين الكفيل والمكفول من خلال الرسائل
+            والهدايا.
+          </p>
+        </div>
+
+        <!--البطاقة الثانية-->
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-teal">
+            <img src="./images/eye-icon.png" alt="شفافية" />
+          </div>
+          <h3>شفافية تامة</h3>
+          <p>
+            تقارير دورية وفورية توضح أين تذهب كل هللة من تبرعك وكيف تؤثر في حياة
+            اليتيم.
+          </p>
+        </div>
+
+        <!-- البطاقة الثالثه -->
+        <div class="feature-card">
+          <div class="feature-icon feature-icon-blue">
+            <img src="./images/shield-icon.png" alt="أمان وخصوصية" />
+          </div>
+          <h3>الأمان والخصوصية</h3>
+          <p>
+            نضمن سرية بيانات المتبرعين والأيتام واستخدام أحدث تقنيات التشفير
+            العالمي.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- قسم الأيتام  -->
+    <section class="orphans-section">
+      <!-- عنوان القسم -->
+      <div id="orphans" class="section-header">
+        <h2 class="section-title">أيتام ينتظرون كفالتك</h2>
+
+        <div class="section-intro">
+          <p class="section-description">
+            بضغطة زر واحدة، يمكنك تغيير مسار حياة إنسان بالكامل.
+          </p>
+          <div>
+            <a href="#" class="view-all-btn">عرض كافة الحالات &rsaquo;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- حاوية بطاقات الأيتام -->
+      <div class="card">
+        <!-- بطاقة اليتيم 1 -->
+        <div class="orphan-card">
+          <div class="card-image">
+            <img src="./images/imag1.png" alt="ليلى عمر" />
+            <span class="orphan-location">غزة</span>
+          </div>
+
+          <div class="orphan-info">
+            <h3>ليلى عمر</h3>
+            <p>العمر: 12 سنة</p>
+            <button class="sponsor-button">اكفلني الآن</button>
+          </div>
+        </div>
+        <!-- بطاقة اليتيم 2 -->
+        <div class="orphan-card">
+          <div class="card-image">
+            <img src="./images/imag2.png" alt="خالد محمود" />
+            <span class="orphan-location">خانيونس</span>
+          </div>
+
+          <div class="orphan-info">
+            <h3>خالد محمود</h3>
+            <p>العمر: 10 سنة</p>
+            <button class="sponsor-button">اكفلني الآن</button>
+          </div>
+        </div>
+        <!-- بطاقة اليتيم 3 -->
+        <div class="orphan-card">
+          <div class="card-image">
+            <img src="./images/imag3.png" alt="سارة محمود" />
+            <span class="orphan-location">رفح</span>
+          </div>
+          <div class="orphan-info">
+            <h3>سارة محمود</h3>
+            <p>العمر: 6 سنة</p>
+            <button class="sponsor-button">اكفلني الآن</button>
+          </div>
+        </div>
+        <!-- بطاقة اليتيم 4 -->
+        <div class="orphan-card">
+          <div class="card-image">
+            <img src="./images/imag4.png" alt="ليلى زيدان" />
+            <span class="orphan-location">النصيرات</span>
+          </div>
+          <div class="orphan-info">
+            <h3>ليلى زيدان</h3>
+            <p>العمر: 9 سنة</p>
+            <button class="sponsor-button">اكفلني الآن</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--قسم رحلة الكفالة  -->
+    <div class="sponsorship-journey">
+      <div id="journey" class="journey-container">
+        <!-- عنوان القسم  -->
+        <h2 class="journey-title">رحلة الكفالة في 3 خطوات</h2>
+
+        <!-- خطوات الرحلة -->
+        <div class="steps-wrapper">
+          <!-- الخطوة 1: التسجيل -->
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>التسجيل واختيار الحالة</h3>
+            <p>أنشئ حسابك وتصفح حالات الأيتام لاختيار من يلمس قلبك.</p>
+          </div>
+
+          <!-- الخطوة 2: التفعيل (نشطة) -->
+          <div class="step-card active">
+            <div class="step-number">2</div>
+            <h3>تفعيل الكفالة</h3>
+            <p>اختر مبلغ الكفالة الشهري الذي يناسبك وقم بعملية الدفع الآمن.</p>
+          </div>
+
+          <!-- الخطوة 3: المتابعة -->
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>متابعة الأثر</h3>
+            <p>استلم تقارير دورية عن تقدم اليتيم دراسياً وصحياً وتواصل معه.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- قسم الدعوة للانضمام   -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <!-- أيقونة الاقتباس -->
+        <div class="cta-quote-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            width="48"
+            height="48"
+          >
+            <path
+              d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+            />
+          </svg>
+        </div>
+
+        <!-- النص -->
+        <h2 class="cta-text">
+          " أنت لا تقدم فقط مالاً، بل تبني إنساناً وتعيد له إيمانه بالمستقبل.
+          انضم إلى عائلة كفيلي اليوم "
+        </h2>
+
+        <!-- الأزرار -->
+        <div class="cta-buttons">
+          <button class="btn btn-primary">انضم إلينا الآن</button>
+          <button class="btn btn-secondary">شاهد قصص النجاح</button>
+        </div>
+      </div>
+    </section>
+    <!-- الفوتر -->
+    <footer id="contact" class="footer-section">
+      <div class="footer-container">
+        <!-- الشعار والوصف -->
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <img
+              src="./images/logo.png"
+              alt="شعار منصة كفيلي"
+              width="120"
+              height="80"
+            />
+          </div>
+          <p class="footer-desc">
+            منصة "كفيلي" هي جسر الثقة الذي يجمع بين قلوب المحسنين وحاجات
+            الأيتام، نسعى لتمكين الجيل القادم بحب وكرامة.
+          </p>
+        </div>
+
+        <!-- روابط المنصة -->
+        <nav class="footer-col footer-nav">
+          <h3 class="footer-heading">المنصة</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#about" class="footer-nav-link">من نحن</a></li>
+            <li>
+              <a href="#privacy" class="footer-nav-link">سياسة الخصوصية</a>
+            </li>
+            <li><a href="#news" class="footer-nav-link">أخبارنا</a></li>
+            <li><a href="#contact" class="footer-nav-link">اتصل بنا</a></li>
+          </ul>
+        </nav>
+
+        <!-- معلومات التواصل -->
+        <div class="footer-col footer-contact">
+          <h3 class="footer-heading">تواصل مباشر</h3>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg
+                class="footer-contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                />
+              </svg>
+              <span>فلسطين ، غزة</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg
+                class="footer-contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                />
+              </svg>
+              <a href="tel:+970500000000" class="footer-contact-link"
+                >+970 500 000 000</a
+              >
+            </li>
+            <li class="footer-contact-item">
+              <svg
+                class="footer-contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="20"
+                height="20"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                />
+              </svg>
+              <a href="mailto:contact@kafeeli.org" class="footer-contact-link"
+                >contact@kafeeli.org</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- حقوق الملكية -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>© 2026 منصة كفيلي لرعاية الأيتام. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
