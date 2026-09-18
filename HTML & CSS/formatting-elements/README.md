@@ -1,10 +1,34 @@
 # HTML Formatting & Elements Practice
 
-A structured exercise document demonstrating the fundamental use of various HTML tags and semantic elements.
+A simple HTML practice project created while learning the basics of HTML elements and text formatting.
 
-## Key Concepts Covered:
+The project demonstrates different HTML tags and how they are used to structure and format content.
 
-- **Text Formatting:** Demonstrates visual and semantic tags like `<b>`, `<strong>`, `<i>`, `<em>`, `<mark>`, `<sub>`, and `<sup>`.
-- **Inline vs. Block Elements:** Explores the behavior of `<span>`, `<pre>`, `<hr>`, and `<br>`.
-- **Annotations & Edits:** Covers text modification elements such as `<del>`, `<ins>`, `<small>`, and `<u>`.
-- **Document Structure:** Showcases proper heading hierarchy from `<h1>` down to `<h6>`.
+## Topics Practiced
+
+- Text formatting elements such as `b`, `strong`, `i`, `em`, `mark`, `sub`, and `sup`
+- Inline and block elements
+- Using `span`, `pre`, `hr`, and `br`
+- Text editing elements such as `del`, `ins`, `small`, and `u`
+- Heading elements from `h1` to `h6`
+- Basic HTML document structure
+
+## Technologies
+
+- HTML
+
+## Project Structure
+
+```text
+HTML-Formatting/
+├── index.html
+└── README.md
+```
+
+## What I Practiced
+
+- Using different HTML elements
+- Understanding the difference between inline and block elements
+- Formatting and modifying text with HTML
+- Organizing content using headings
+- Building a basic HTML document

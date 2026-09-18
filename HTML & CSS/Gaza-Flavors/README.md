@@ -1,13 +1,41 @@
 # Gaza Flavors - Restaurant Website
 
-A fully responsive, modern restaurant website built using HTML5 and CSS3, showcasing a rich culinary experience.
+A responsive restaurant website built while practicing HTML and CSS.
 
-## Key Features:
+The website presents a restaurant with different sections including a hero section, menu, special offers, food gallery, opening hours, and contact information.
 
-- **Hero Section:** Features an immersive background image with an overlay, a navigation bar, logo[cite: 9], and a call-to-action button.
-- **About Section:** Highlights the restaurant's rich history and background over 25+ years of experience[cite: 9].
-- **Special Offers & Menu:** Showcases promotional items, multi-category dishes (seafood, steaks, Italian pasta, desserts, and salads), prices, and descriptions using CSS Grid and Flexbox layouts[cite: 8, 9].
-- **Daytime Schedule:** Displays operating hours across different meal sessions (Breakfast, Lunch, Dinner, Dessert)[cite: 9].
-- **Interactive Food Gallery:** A grid gallery with hover zoom and opacity transition effects[cite: 8, 9].
-- **Contact & Footer:** Integrated location, contact info, social media links (Facebook, LinkedIn, Instagram), a fully structured contact form.
+## Features
 
+- Responsive navigation and hero section
+- About section
+- Special offers and menu categories
+- Food items with prices and descriptions
+- Opening hours
+- Food gallery with hover effects
+- Contact form
+- Social media links
+- Responsive design for different screen sizes
+
+## Technologies
+
+- HTML
+- CSS
+
+## Project Structure
+
+Gaza-Flavors/
+├── index.html
+├── images/
+│ └── ...
+└── README.md
+
+## What I Practiced
+
+- Building a complete website using HTML and CSS
+- CSS Flexbox
+- CSS Grid
+- Responsive design
+- Hover effects and transitions
+- Creating navigation and different website sections
+- Working with forms
+- Organizing a multi-section webpage

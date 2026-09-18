@@ -1,10 +1,37 @@
-# Responsive Dashboard (HTML & CSS Only)
+# Responsive Dashboard
 
-A clean, modern, and fully responsive dashboard interface built using pure HTML and CSS without any JavaScript framework dependencies.
+A responsive dashboard interface built while practicing HTML and CSS.
 
-## Key Features:
+The dashboard includes a sidebar, statistics cards, a products table, and icons using Font Awesome.
 
-- **Collapsible Sidebar Menu:** Features an interactive sliding side menu that expands smoothly on hover (from a compact icon view to a full descriptive menu) using CSS transitions.
-- **Statistics Grid (Data Info):** Displays key metrics (Users, Posts, Products, and Revenue) inside responsive, flexible cards with smooth hover effects.
-- **Products Inventory Table:** A structured data table showcasing items, prices, and quantities with custom row styling and interactive hover highlights.
-- **Icons Integration:** Utilizes Font Awesome icons to enhance the UI/UX across the navigation and data panels.
+## Features
+
+- Responsive sidebar menu
+- Statistics cards for users, posts, products, and revenue
+- Products table with prices and quantities
+- Hover effects and CSS transitions
+- Responsive design for different screen sizes
+- Font Awesome icons
+
+## Technologies
+
+- HTML
+- CSS
+- Font Awesome
+
+## Project Structure
+
+```text
+Dashboard/
+├── index.html
+├── image
+└── README.md
+## What I Practiced
+
+- CSS Flexbox
+- CSS Grid
+- Responsive design
+- CSS transitions and hover effects
+- Working with tables
+- Using Font Awesome icons
+```
