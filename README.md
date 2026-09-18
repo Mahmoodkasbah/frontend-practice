@@ -19,6 +19,8 @@ A collection of practice projects built while learning frontend development.
 - Gaza Flavors
   - HTML
   - CSS
+- HTML Basics & Exercises
+  - `html-formatting-practice.html` (Text formatting, inline/block elements, structural tags)
 
 ### JavaScript
 
