@@ -20,14 +20,6 @@ The quiz contains questions about **HTML, CSS, and JavaScript**, and shows the u
 - CSS
 - JavaScript
 
-## Project Structure
-
-Quiz/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
 ## What I Practiced
 
 - DOM manipulation
